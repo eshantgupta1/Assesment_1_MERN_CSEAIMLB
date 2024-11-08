@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4e1c1;
+        }
+        .container {
+            background-color: #e7e9eb;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            text-align: center;
+        }          
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+            <label for="amount">Amount:</label>
+            <input type="text" id="amount" value="1">
+            <select>
+                <option>USD - American Dollar</option>
+                <option>EUR - Euro</option>
+                <option>GBP - British Pound</option>
+            </select>
+            <label for="convert">Convert:</label>
+            <input type="text" id="convert" placeholder="">
+            <select>
+                <option>TRY - Turkish Lira</option>
+                <option>INR - Indian Rupee</option>
+                <option>JPY - Japanese Yen</option>
+            </select>
+        <button>Convert</button>
+    </div>
+</body>
+</html>

@@ -4,17 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
     <h1>Login Page</h1>
     <label for="name">Name:</label>  &nbsp;&nbsp;&nbsp;&nbsp;
-    <input id="name" name="fname" required placeholder="Your Full Name">
+    <input type="name" id="name" name="fname" required placeholder="Your Full Name">
     <br>
     <br>
     <label for="password">Password:</label>
-    <input id="password" name="pass" required placeholder="Enter Your Password">
-    <BR>  
-    <BR>
-    <button>Submit</button>
+    <input type="password" id="password" name="pass" required placeholder="Enter Your Password">
+    <BR><BR>
+    <button onclick="submitForm()">Submit</button>
+</div>
+<script>
+        function submitForm() {
+            const name = document.getElementById("name").value;
+            const password = document.getElementById("password").value;
+
+            if (name && password) { 
+                window.location.href = 'second.html';
+            } else {
+                alert("Enter name and password");
+            }
+        }
+    </script>
 </body>
 </html>
